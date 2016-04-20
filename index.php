@@ -31,8 +31,15 @@
 	}*/
 	
 	$res = mysqli_query($con,'select * from temperature');
+	/*
 	$row=mysqli_fetch_array($res);
 	var_dump($row);
-	
+	$row=mysqli_fetch_array($res);
+	var_dump($row);
+	$row=mysqli_fetch_array($res);
+	var_dump($row);*/
+	while($row=mysqli_fetch_row($res)){
+		var_dump($row);
+	}
 	mysqli_close($con);
 ?>
